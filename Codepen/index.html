@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coded Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CDN for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="container">
+        <h1>Code Editor</h1>
+        <div class="editor">
+            <div class="left">
+                <label for="htmlCode"><i class='bx bxl-html5'></i> HTML</label>
+                <textarea id="htmlCode" spellcheck="false" onkeyup="run()"></textarea>
+
+                <label for="cssCode"><i class='bx bxl-css3'></i> CSS</label>
+                <textarea id="cssCode" spellcheck="false" onkeyup="run()"></textarea>
+
+                <label for="jsCode"><i class='bx bxl-javascript'></i> JavaScript</label>
+                <textarea id="jsCode" spellcheck="false" onkeyup="run()"></textarea>
+            </div>
+            <div class="right">
+                <label><i class='bx bx-play'></i> Output</label>
+                <iframe id="output"></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
